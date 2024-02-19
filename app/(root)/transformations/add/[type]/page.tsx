@@ -3,7 +3,7 @@ import TransformationForm from '@/components/shared/TransformationForm'
 
 import { auth } from '@clerk/nextjs'
 import { redirect } from 'next/navigation'
-import { getUserById } from '@/lib/actions/user.actions'
+import { getUserById } from '@/actions/user.actions'
 import { transformationTypes } from '@/constants'
 
 export default async function AddTransformationTypePage({

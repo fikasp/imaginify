@@ -1,9 +1,5 @@
 'use client'
 
-import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm } from 'react-hook-form'
-import { z } from 'zod'
-
 import {
 	Select,
 	SelectContent,
@@ -11,8 +7,6 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from '@/components/ui/select'
-
-import { Button } from '@/components/ui/button'
 import {
 	Form,
 	FormControl,
@@ -22,21 +16,25 @@ import {
 	FormLabel,
 	FormMessage,
 } from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
 import {
 	aspectRatioOptions,
 	creditFee,
 	defaultValues,
 	transformationTypes,
 } from '@/constants'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 import { CustomField } from './CustomField'
 import { useEffect, useState, useTransition } from 'react'
-import { AspectRatioKey, debounce, deepMergeObjects } from '@/lib/utils'
-import { updateCredits } from '@/lib/actions/user.actions'
+import { AspectRatioKey, debounce, deepMergeObjects } from '@/utils'
+import { updateCredits } from '@/actions/user.actions'
 import { getCldImageUrl } from 'next-cloudinary'
-import { addImage, updateImage } from '@/lib/actions/image.actions'
+import { addImage, updateImage } from '@/actions/image.actions'
 import { useRouter } from 'next/navigation'
 import { InsufficientCreditsModal } from './InsufficientCreditsModal'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm } from 'react-hook-form'
+import { z } from 'zod'
 import TransformedImage from './TransformedImage'
 import MediaUploader from './MediaUploader'
 

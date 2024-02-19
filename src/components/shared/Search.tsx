@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { formUrlQuery, removeKeysFromQuery } from '@/lib/utils'
+import { formUrlQuery, removeKeysFromQuery } from '@/utils'
 import { Input } from '@/components/ui/input'
 
 export function Search() {

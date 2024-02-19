@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { CldImage, getCldImageUrl } from 'next-cloudinary'
-import { dataUrl, debounce, download, getImageSize } from '@/lib/utils'
+import { dataUrl, debounce, download, getImageSize } from '@/utils'
 import { PlaceholderValue } from 'next/dist/shared/lib/get-img-props'
 
 export default function TransformedImage({

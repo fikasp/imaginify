@@ -11,9 +11,9 @@ import {
 import { CldImage } from 'next-cloudinary'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { transformationTypes } from '@/constants'
-import { IImage } from '@/lib/database/models/image.model'
-import { formUrlQuery } from '@/lib/utils'
-import { Button } from '../ui/button'
+import { IImage } from '@/database/models/image.model'
+import { formUrlQuery } from '@/utils'
+import { Button } from '@/components/ui/button'
 import { Search } from './Search'
 
 export const Collection = ({

@@ -4,7 +4,7 @@ import Checkout from '@/components/shared/Checkout'
 
 import { redirect } from 'next/navigation'
 import { SignedIn, auth } from '@clerk/nextjs'
-import { getUserById } from '@/lib/actions/user.actions'
+import { getUserById } from '@/actions/user.actions'
 import { Button } from '@/components/ui/button'
 import { plans } from '@/constants'
 

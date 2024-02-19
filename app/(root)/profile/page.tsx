@@ -4,8 +4,8 @@ import Header from '@/components/shared/Header'
 import { auth } from '@clerk/nextjs'
 import { redirect } from 'next/navigation'
 import { Collection } from '@/components/shared/Collection'
-import { getUserImages } from '@/lib/actions/image.actions'
-import { getUserById } from '@/lib/actions/user.actions'
+import { getUserImages } from '@/actions/image.actions'
+import { getUserById } from '@/actions/user.actions'
 
 export default async function Profile({ searchParams }: SearchParamProps) {
 	const page = Number(searchParams?.page) || 1

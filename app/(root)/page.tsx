@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Collection } from '@/components/shared/Collection'
-import { getAllImages } from '@/lib/actions/image.actions'
+import { getAllImages } from '@/actions/image.actions'
 import { navLinks } from '@/constants'
 
 export default async function Home({ searchParams }: SearchParamProps) {

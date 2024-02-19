@@ -5,8 +5,8 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { Button } from '@/components/ui/button'
 import { navLinks } from '@/constants'
-import { Button } from '../ui/button'
 
 export default function MobileNav() {
 	const pathname = usePathname()

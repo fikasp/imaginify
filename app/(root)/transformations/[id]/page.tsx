@@ -6,8 +6,8 @@ import TransformedImage from '@/components/shared/TransformedImage'
 import { auth } from '@clerk/nextjs'
 import { Button } from '@/components/ui/button'
 import { DeleteConfirmation } from '@/components/shared/DeleteConfirmation'
-import { getImageById } from '@/lib/actions/image.actions'
-import { getImageSize } from '@/lib/utils'
+import { getImageById } from '@/actions/image.actions'
+import { getImageSize } from '@/utils'
 
 export default async function ImageDetails({
 	params: { id },

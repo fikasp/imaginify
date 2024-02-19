@@ -11,9 +11,9 @@ import {
 	AlertDialogTitle,
 	AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'
-import { deleteImage } from '@/lib/actions/image.actions'
+import { Button } from '@/components/ui/button'
+import { deleteImage } from '@/actions/image.actions'
 import { useTransition } from 'react'
-import { Button } from '../ui/button'
 
 export const DeleteConfirmation = ({ imageId }: { imageId: string }) => {
 	const [isPending, startTransition] = useTransition()

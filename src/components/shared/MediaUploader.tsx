@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useToast } from '@/components/ui/use-toast'
-import { dataUrl, getImageSize } from '@/lib/utils'
+import { dataUrl, getImageSize } from '@/utils'
 import { CldImage, CldUploadWidget } from 'next-cloudinary'
 import { PlaceholderValue } from 'next/dist/shared/lib/get-img-props'
 

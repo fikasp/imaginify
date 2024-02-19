@@ -4,7 +4,7 @@ import {
 	FormControl,
 	FormMessage,
 	FormLabel,
-} from '../ui/form'
+} from '@/components/ui/form'
 
 import React from 'react'
 import { Control } from 'react-hook-form'

@@ -4,8 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { Button } from '@/components/ui/button'
 import { navLinks } from '@/constants'
-import { Button } from '../ui/button'
 
 export default function Sidebar() {
 	const pathname = usePathname()

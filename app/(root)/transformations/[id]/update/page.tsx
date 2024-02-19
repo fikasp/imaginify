@@ -4,8 +4,8 @@ import TransformationForm from '@/components/shared/TransformationForm'
 import { auth } from '@clerk/nextjs'
 import { redirect } from 'next/navigation'
 import { transformationTypes } from '@/constants'
-import { getUserById } from '@/lib/actions/user.actions'
-import { getImageById } from '@/lib/actions/image.actions'
+import { getUserById } from '@/actions/user.actions'
+import { getImageById } from '@/actions/image.actions'
 
 export default async function Page({ params: { id } }: SearchParamProps) {
 	const { userId } = auth()
