@@ -43,7 +43,7 @@ export default function Checkout({
 				className: 'error-toast',
 			})
 		}
-	}, [])
+	}, [toast])
 
 	const onCheckout = async () => {
 		const transaction = {

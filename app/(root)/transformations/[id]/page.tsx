@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Header from '@/components/shared/Header'
-import TransformedImage from '@/components/shared/TransformedImage'
+import TransformedImage from '@/components/forms/TransformedImage'
 
 import { auth } from '@clerk/nextjs'
 import { Button } from '@/components/ui/button'
