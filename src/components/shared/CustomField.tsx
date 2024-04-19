@@ -8,7 +8,7 @@ import {
 
 import React from 'react'
 import { Control } from 'react-hook-form'
-import { formSchema } from './TransformationForm'
+import { formSchema } from '../forms/TransformationForm'
 import { z } from 'zod'
 
 type CustomFieldProps = {

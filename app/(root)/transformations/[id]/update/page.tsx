@@ -1,5 +1,5 @@
 import Header from '@/components/shared/Header'
-import TransformationForm from '@/components/shared/TransformationForm'
+import TransformationForm from '@/components/forms/TransformationForm'
 
 import { auth } from '@clerk/nextjs'
 import { redirect } from 'next/navigation'
