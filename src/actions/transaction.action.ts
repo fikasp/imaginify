@@ -1,11 +1,11 @@
 'use server'
 
-import { redirect } from 'next/navigation'
 import Stripe from 'stripe'
-import { handleError } from '../utils'
-import { connectToDatabase } from '../database/mongoose'
 import Transaction from '../database/models/transaction.model'
+import { connectToDatabase } from '../database/mongoose'
+import { handleError } from '../utils'
 import { updateCredits } from './user.actions'
+import { redirect } from 'next/navigation'
 
 export async function checkoutCredits(transaction: CheckoutTransactionParams) {
 	const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
@@ -16,7 +16,7 @@ export async function checkoutCredits(transaction: CheckoutTransactionParams) {
 		line_items: [
 			{
 				price_data: {
-					currency: 'usd',
+					currency: 'pln',
 					unit_amount: amount,
 					product_data: {
 						name: transaction.plan,
