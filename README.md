@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Imaginify is an AI SaaS platform built on Next.js 14, specializing in advanced image processing capabilities. With secure payment integration via Stripe and robust image transformation features, EasyRead offers a comprehensive solution for image restoration, recoloring, object removal, and more. Enhance your portfolio and learn through our detailed tutorial available on YouTube.
+Imaginify is an AI SaaS platform built on Next.js 14, specializing in advanced image processing capabilities. With secure payment integration via Stripe and robust image transformation features, Imaginify offers a comprehensive solution for image restoration, recoloring, object removal, and more. Enhance your portfolio and learn through our detailed tutorial available on YouTube.
 
 You can try it out here: **[https://imaginify-fikasp.vercel.app](https://imaginify-fikasp.vercel.app)**
 
